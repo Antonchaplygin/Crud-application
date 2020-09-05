@@ -7,7 +7,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 $id = $_POST["id"];
 $input_name = trim($_POST["name"]);
 if(empty($input_name)){
-$name_err = "Please enter a name.";
+$name_err = "Please enter a name please.";
 }elseif(!filter_var($input_name, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z\s]+$/")))){
 $name_err = "Please enter a valid name.";
 }else{
